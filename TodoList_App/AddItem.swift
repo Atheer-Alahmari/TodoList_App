@@ -24,7 +24,7 @@ class AddItem: UIViewController {
     @IBAction func addItem_Action(_ sender: UIButton!) {
         // Format Date, Time
         let date_Format = DateFormatter()
-        date_Format.dateFormat = "d/MMM/y , HH:mm"  //"yyyy-MM-dd"
+        date_Format.dateFormat = "dd/MM/yyyy"
         let dueDate_string = date_Format.string(from: date_Picker.date)
         
         // check if nil or not
